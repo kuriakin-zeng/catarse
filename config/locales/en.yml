@@ -6,7 +6,7 @@ en:
     updates:
       create:
         notice: 'Update was successfully created!'
-  failure_title: 'Please, fix the errors bellow:'
+  failure_title: 'Please fix the errors below:'
   uservoice_gadget:
     user:
       name: 'User'
@@ -14,9 +14,9 @@ en:
       confirmed_contributions: 'Confirmed contributions'
       created_projects: 'Created projects'
   site:
-    title: "The biggest crowdfunding community in Brazil"
+    title: "The biggest crowdfunding community for Kenya"
     meta_title:  "%{title} · %{company_name}"
-    description: "O Catarse é uma ferramenta diferente – e colaborativa – para tirar o seu projeto do papel!"
+    description: "Acorn Crowd Ventures lets you raise fund from investors all over the world."
     keywords: "catarse, crowdfunding, project, community, open source"
   login:
     forgot_password:
@@ -36,9 +36,9 @@ en:
     reward_description: 'Reward description'
     confirmed_at: 'Payment confirmed at'
     value: 'Contribution value'
-    service_fee: 'Catarse fee'
+    service_fee: 'Acorn fee'
     user_name: 'Contribution name'
-    user_email: 'Catarse user profile e-mail'
+    user_email: 'Acorn user profile e-mail'
     payer_email: 'Payment gateway user e-mail'
     payment_method: 'Payment method'
     address_street: 'Street'
@@ -144,8 +144,33 @@ en:
       models:
         project:
           attributes:
+            video_url:
+              blank: 'Please upload the project video'
+            budget:
+              blank: 'The project budget cannot be blank'
+            uploaded_image:
+              blank: 'Please upload a project image'
+            name:
+              blank: "Project title cannot be blank"
             permalink:
-              invalid: "Invalid project permalink"
+              blank: "Project URL cannot be blank"
+              invalid: "Invalid Project URL"
+              taken: "This URL is not available"
+            category:
+              blank: "Please choose a project category"
+            goal:
+              blank: "The funding goal cannot be blank"
+              greater_than: "The funding goal must be greater than 9"
+              not_a_number: "The funding goal must be a number"
+            online_days:
+              blank: "Please specify the length of your campaign"
+              greater_than: "The length of campaign must be at least 1 day"
+              not_a_number: "The length of campaign must be a number"
+            about_html:
+              blank: "The project description cannot be blank"
+            headline:
+              blank: "The project headline cannot be blank"
+              too_long: "The project headline cannot exceed 140 characters."
     attributes:
       unsubscribe:
         update: "Receive project updates"
@@ -154,10 +179,10 @@ en:
       project:
         category: Category
         expires_at: Deadline
-        online_days: Days of the air campaign
+        online_days: Length of Campaign
         headline: Headline
         image_url: "Image URL"
-        name: Name
+        name: Title
         user_id: "User ID"
         video_url: "Video URL"
         permalink: 'Project URL'
@@ -276,7 +301,7 @@ en:
         headline: "Summarize your project in 140 characters. This sentence will be the first contact people will have with your project, before even seeing the video. Be creative, clear and direct :)"
         name: "Be as objective as you can. Leave explanations for the About section."
         uploaded_image: "Upload a 512x400 image(.jpg)."
-        video_url: "Paste the URL from a <a href=\"http://vimeo.com\" target=\"_blank\">Vimeo</a> video. We recommend Vimeo because it looks better and doesn't have ads. This way, your project will look better too! <strong>Produce your video the best you can and make a video specifically for your campaign</strong>. If there is a single thing that differentiates the projects that reach the goal from the others is the video. Observe ;)"
+        video_url: "Paste the URL from a Vimeo video. We recommend Vimeo because it looks better and doesn't have ads. This way, your project will look better too! <strong>Produce your video the best you can and make a video specifically for your campaign</strong>. If there is a single thing that differentiates the projects that reach the goal from the others is the video. Observe ;)"
       reward:
         description: "Describe your reward in a way that arouses people's interest to contribute the project. Don't be shy!"
         maximum_contributions: "If your reward is limited, tell us the maximum contributions."
@@ -299,7 +324,7 @@ en:
         about: "About your project. How will you spend this money?"
         expires_at: "What's the deadline to reach your goal?"
         goal: "How much do you intend to raise? (use only numbers)"
-        name: "Project's Name"
+        name: "Project Title"
         online_days: 'How Many Campaign Days?'
         video_url: Video
         uploaded_image: "Project thumbnail"
@@ -325,6 +350,7 @@ en:
       submit: Send your project
       profile: "My profile"
       account: "My account"
+      search: Search
     user:
       logout: Logout
       my_credits: "My credit"
@@ -419,9 +445,9 @@ en:
         anonymous_description: "Opted to remain incognito"
         no_reward: "This contribution has not picked a reward"
       review:
-        error: "Ooops. There was an error while registering your back. Please try again."
+        error: "Oops. There was an error while registering your back. Please try again."
       show:
-        error: "Ooops. You can only access this page after contributing a project."
+        error: "Oops. You can only access this page after contributing a project."
         moip_message: "Your transaction is “Authorized” and you Moip code is “%{code}″.<br>If you have any questions about this transaction, contact Moip directly."
         header_subtitle: "Without you maybe this project wouldn't stand a chance. Welcome to the team!"
         header_title: "Thank you! :D"
@@ -589,6 +615,29 @@ en:
       submit: "Save draft"
       subtitle: "The time to make it happen is now! We really want to know what you're up to..."
       title: "Submit your project"
+      page-title: "Comece seu projeto"
+      faq:
+        titles:
+          support: "Support"
+          know_more: "Learn More"
+        links:
+          criteria: "Critérios de seleção"
+          suport_central: "Central de suporte"
+          support_contact: "Entre em contato com a gente"
+          how_it_works: "Como o Catarse funciona?"
+          money: "Como receberei o dinheiro?"
+          selection: "Como os projetos são selecionados?"
+          all_or_nothing: "Por que Tudo ou Nada?"
+      form:
+        blocks:
+          first:
+            title: "Welcome!"
+            description: "PLease fill out the following information to start your project."
+        info:
+          permalink: http://acorncv.com/
+          goal: $
+          online_days: days
+        submit: "Save and Continue"
     twitter:
       take_a_look: "Check out the project %{name} on @catarse"
     video_embed:
@@ -676,7 +725,7 @@ en:
   static:
     guidelines_contributions:
       title: "I want to contribute a project!"
-      subtitle: "Understand step by step how to contribute a project on Catarse."
+      subtitle: "Understand step by step how to contribute a project on Acorn."
       introduction: "Catarse is an excellent way to engage in a cause you believe in"
       legend_html: "We believe that being part of a project is the kind of thing that sometimes we do not really know why, but it does a darn good."
       title_one: "Explore the Project"
@@ -716,8 +765,8 @@ en:
       explore_projects: "I want to contribute a project"
     guidelines:
       title: "How it works"
-      subtitle: "Get to know Catarse better."
-      introduction_html: "Catarse is a space of exchange among individuals who together <br >enable the realization of creative projects."
+      subtitle: "Get to know Acorn better."
+      introduction_html: "Acorn is a space of exchange among individuals who together <br >enable the realization of creative projects."
       legend_html: "We believe that connecting people that share value with respect to a cause; an idea; a project,  is one of the best ways to make them come true. <br><br> Be very welcome! This is your space as much as it is ours, after all, catharsis happens daily from the meeting of people in search of new ways to give life to more initiatives from society itself. We understand this to be an alternative to government resources, the sponsoring companies and bank loans = D"
       submit: "SUBMITTING A PROJECT"
       send_project: "Understand how to submit your project"
@@ -888,7 +937,6 @@ en:
     header:
       bio_tooltip: "Click here to write about you..."
       name_tooltip: "Click here to fill your name..."
-    
   notifications:
     contributions:
       to_contribution:
@@ -897,3 +945,55 @@ en:
     updates:
       subject: "If the league! Update of %{project_name} by %{project_owner}: %{update_title}"
       text: "%{update_title}<br />%{update_text}<br />Comments? Send it on in the project page: <a href='%{project_link}'>%{project_name}</a>."
+  simple_form:
+    collections:
+      project:
+        traffic_sources:
+          one: "I have another project on Acorn."
+          two: "Someone who has a project on Acorn told me about it."
+          three: "A friend/colleague/contact told me about it."
+          four: "I learned about it from a project that was successfully funded."
+          five: "I read about it from a blog."
+          six: "I read about it on press (news portal, TV, newspaper, magazine)"
+          seven: "I learned about it in a class/course/lecture/event."
+          eight: "I searched crowdfunding/alternative funding on a search engine."
+          nine: "Other"
+    validation_texts:
+      reward:
+        minimum_value: "Please enter a value of 10 or greater"
+        description: "Please provide a description of the reward"
+      bank_account:
+        bank_id: "Select a bank"
+        agency: "Qual o número da agência?"
+        account: "What is the account number?"
+        account_digit: "What is the check digit?"
+        owner_name: "Informe um nome com no mínimo 5 e no máximo 30 letras"
+        owner_document: "Informe um CPF ou CNPJ válido para o correntista"
+      contribution:
+        payer_name: "Please enter the investor's name"
+        payer_email: "Please enter the investor's email"
+        payer_document: "Por favor digite um CPF ou CNPJ válido"
+        address_state: "State"
+        address_street: "Street Address"
+        address_number: "Number"
+        address_city: "City"
+        address_zip_code: "Zip Code"
+        address_phone_number: "Phone"
+    prompts:
+      project:
+        category: "Please select a category"
+        select: "Please select an option"
+        traffic_sources: "How did you learn about Acorn Crowd Ventures?"
+    hints:
+      project:
+        select: "Please select an option"
+        traffic_sources: "How did you learn about Acorn Crowd Ventures?"
+        name: "Give your project a name that is easily remembered (50 chars max)"
+        permalink: "Preferably something simple. Avoid underlines or hyphens."
+        category: "Choose a category that your project belongs to."
+        goal: "Plan a goal that is consistent with your project proposal. Review your budget and do not forget to include the 13% charged by Acorn if your project is successfully funded."
+        online_days: "You can choose campaign length of between 1 and 60 days. Check out the guide of directors for tips on deadlines."
+        video_url: "Enter the link to your Vimeo or Youtube video."
+        about_html: "Tell the potential investors about what your project will accomplish. You may want to include how the money will be used, who is behind the project, and when the project will be completed. Transparency attracts more investors. Remember, your project will be assessed by ordinary people who decide whether they will invest in your project."
+        headline: "The summary of your project that appears on your project card (100 characters max)"
+        uploaded_image: "The thumbnail of your project (PNG, JPG of size 600x340)"

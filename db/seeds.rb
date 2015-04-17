@@ -52,7 +52,7 @@ puts 'Seeding the database...'
   email_system: '#',
   email_no_reply: '#',
   facebook_url: "http://facebook.com/#",
-  facebook_app_id: '173747042661491',
+  facebook_app_id: '1606767386235959',
   twitter_url: 'http://twitter.com/#',
   twitter_username: "#",
   mailchimp_url: "#",

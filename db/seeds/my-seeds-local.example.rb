@@ -25,7 +25,7 @@ puts "Creating Configuration entries..."
 {
   
   catarse_fee: '0.13',
-  company_name: 'Catarse',
+  company_name: 'Acorn Crowd Ventures',
 
   host: 'YOUR_HOST',
   base_domain: 'YOUR_DOMAIN',

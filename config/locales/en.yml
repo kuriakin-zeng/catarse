@@ -103,7 +103,7 @@ en:
       near: "Near me"
       expiring: "Expiring"
       recents: "Recent"
-      submit: "Send your project"
+      submit: "Submit your project"
       discover: "Discover projects"
     texts:
       copyleft: "Made with love."
@@ -271,6 +271,7 @@ en:
       reached: reached
   error: "Ooops! There was an error. Please try again."
   explore:
+    title: Explore the startups
     index:
       near: 'Near me'
       categories: Categories
@@ -280,8 +281,13 @@ en:
       recommended: Recommended
       subtitle: "Explore the projects, find the ones that touch you, and make them happen!"
       successful: Successful
-      title: "Discover amazing projects"
-    title: "Explore the projects"
+      success_follow: "You will receive weekly digest of new projects in %{name}"
+      success_unfollow: "You have successfully unfollowed %{name}"
+      follow: Follow
+      unfollow: Unfollow
+      following: Following
+      in_funding: In Funding
+      title: "Discover Amazing Startups "
     project:
       empty: "Hey, we didn't find any project with the text you searched. Wanna try some new words? =D"
   formtastic:
@@ -347,13 +353,23 @@ en:
       signup: "Sign up"
       signin: Login
       discover: Discover
-      submit: Send your project
+      submit: Submit your Project
       profile: "My profile"
       account: "My account"
       search: Search
     user:
       logout: Logout
       my_credits: "My credit"
+    footer:
+      texts:
+        copyleft: "Built with love | 2015"
+    titles:
+        social: "Social"
+        about: "About us"
+        social: "Social networks"
+        sitemap: "Browse"
+        newsletter: "Subscribe to our news"
+        contact: "Keep in touch"
   not_informed: "not informed"
   notify_locale: "We identified your language by your browser. If you prefer another one, click on one of the flags on the right."
   on_the_spot:
@@ -403,6 +419,17 @@ en:
       reached_goal: funded
       draft: "draft"
   projects:
+    index:
+      sidebar:
+        placeholders:
+          email: "you@example.com"
+      title: "Acorn Crowd Ventures"
+      back_a_project: "Discover Startups"
+      banner_title: "Invest in a Startup"
+      banner_subtitle: "Music, comics, cinema, social impact, technology and more. Meet, get inspired and support startups."
+    index_header:
+      subtitle: Invest in startups in Kenya and be part something bigger.
+      title: Invest in startups that you believe in 
     no_projects: "%{name} haven't started any project on Catarse yet. We wonder if inspiration will hit one of these days!"
     no_projects_current_user_html: "You haven't submitted any project to Catarse yet. Let the inspiration flow and %{link} to start!"
     title: "%{name}'s projects"
@@ -592,7 +619,7 @@ en:
       headline_important: "It's a summary of  your project . 140 characters tops!:D"
       tags_important: "Check other projects in your category  <a href='%{href}' target='_blank'>here!</a>!."
       subtitle: "The time to make it happen is now! We really want to know what you're up to..."
-      title: "Send your project"
+      title: "Submit your project"
       about: "Describe your project and how much do you need"
       category: "Project category"
       how_much_you_need: "How much do you want to raise?"
@@ -621,18 +648,18 @@ en:
           support: "Support"
           know_more: "Learn More"
         links:
-          criteria: "Critérios de seleção"
-          suport_central: "Central de suporte"
-          support_contact: "Entre em contato com a gente"
-          how_it_works: "Como o Catarse funciona?"
-          money: "Como receberei o dinheiro?"
-          selection: "Como os projetos são selecionados?"
-          all_or_nothing: "Por que Tudo ou Nada?"
+          criteria: "Selection Criteria"
+          suport_central: "Support Center"
+          support_contact: "Contact Us"
+          how_it_works: "How It Works"
+          money: "How will I get the money?"
+          selection: "How are startups selected?"
+          all_or_nothing: "Why is it all or nothing?"
       form:
         blocks:
           first:
             title: "Welcome!"
-            description: "PLease fill out the following information to start your project."
+            description: "Please fill out the following information to start your project."
         info:
           permalink: http://acorncv.com/
           goal: $
@@ -720,8 +747,6 @@ en:
       success: "Successfully logged out. See you!"
     failure:
       error: "There was an error while loggin in. Please try again."
-
-
   static:
     guidelines_contributions:
       title: "I want to contribute a project!"
@@ -932,7 +957,7 @@ en:
       submit_text: "Choose your picture"
       submit: "Submit"
       my_data: "My profile"
-      newsletter: "I want to receive news from Catarse via email"
+      newsletter: "I want to receive news from Acorn via email"
       password_hint: "<i>Leave blank if you don't want to change it.</i>"
     header:
       bio_tooltip: "Click here to write about you..."
@@ -997,3 +1022,30 @@ en:
         about_html: "Tell the potential investors about what your project will accomplish. You may want to include how the money will be used, who is behind the project, and when the project will be completed. Transparency attracts more investors. Remember, your project will be assessed by ordinary people who decide whether they will invest in your project."
         headline: "The summary of your project that appears on your project card (100 characters max)"
         uploaded_image: "The thumbnail of your project (PNG, JPG of size 600x340)"
+  pages:
+    start:
+      page-title: "How It Works"
+      title: "Crowdfund your startup."
+      submit: "Submit Your Startup"
+      learn-more: "Learn More"
+      header:
+        people: "people have funded at least one startups"
+        success: "startups successfully funded"
+        money: "Data for startups"
+      start:
+        title: "Start Your Project"
+        content: "The first step to transform your idea into reality is creating a draft. We are here to help."
+        link: "Learn more about the first steps of a project."
+      people:
+        title: "Plan Your Campaign"
+        content: "Planning a good campaign is a decisive factor for the success of a crowdfunding project. We offer tools to help you!"
+        link: 'Learn how many investors you need.'
+      work:
+        title: "All or Nothing."
+        content: "You set the goal and duration of your campaign. You can choose between 1 and 60 days as the duration of the campaign. If you reach your goal, you will receive the investment. Otherwise your investors will get their money back. We charge a fee of 13% on campaigns that have reached or exceeded the goal. "
+        link: 'Receive advice on how to create a successful campaign.'
+      time:
+        title: "Pitch to Your Investors"
+        content: "Pitch to your investors; they decide the success of your campaign. Acorn is a platform for you to approach people who believe in your startup."
+        link: 'Learn how our rate keeps us around.'
+

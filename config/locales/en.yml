@@ -37,7 +37,7 @@ en:
       password: "Password"
 
   contribution_report_to_project_owner:
-    reward_description: 'Reward description'
+    reward_description: 'Returns description'
     confirmed_at: 'Payment confirmed at'
     value: 'Contribution value'
     service_fee: 'Acorn fee'
@@ -223,7 +223,7 @@ en:
       contribution: Contribution
       category: Category
       project: Project
-      reward: Reward
+      reward: Returns
   contribution:
     display_confirmed_at: "%{time_ago} ago"
     reward_must_be_from_project: "must be from the same project"
@@ -298,7 +298,7 @@ en:
     hints:
       contribution:
         credits: "You have <strong>%{credits}</strong> in credits and can contribution with up to this amount without needing to make a new payment."
-        value: "You choose the amount ;) starting with R$10, any amount is great."
+        value: "You choose the amount ;) starting with $10, any amount is great."
       project:
         video_url_edit: 'Paste here the URL of your Vimeo/Youtube video.'
         about: "Tell us about what inspired you to come up with this project . Be objective end charming, present your readers with something that moves them while being very transparent over the expectations on your project!"
@@ -395,6 +395,8 @@ en:
       title: "Forgot password?"
       site_title: "Recover password"
   project:
+    update:
+      success: "Campaign is successfully updated."
     start:
       email_subject: "Your project has been received by Catarse's team"
       email_text: "Thanks for trusting your project to Catarse :)<br><br>We know that you expect a quick reply but, to be quite frank, we take up to 4 days to respond, ok? That is because we have a small team working on several projects. Note that the reply can come sooner, so keep attention to your inbox.<br><br>Meanwhile it is worth to get to know the projects that are online (<a href='%{explore_link}' style='color: #E75297 !important;'>%{explore_link}</a>) and - if you like any of them- contribute it! This is the way to show support for the crowdfunding culture in Brazil and to feed the ecosystem that keeps growing around Catarse.<br><br>Besides that, you will get some inspiration for your own project...<br><br>Stay tuned for updates in <a href='%{facebook}' style='color: #E75297 !important;'>Facebook</a> and get some deeper knowledge about Catarse reading the posts in our <a href='%{blog}' style='color: #E75297 !important;'>blog</a>.<br><br>If you have any doubt, send an email to: %{email}"
@@ -423,6 +425,153 @@ en:
       reached_goal: funded
       draft: "draft"
   projects:
+    card:
+      raised: Raised
+    reward_fields:
+      edit: "Edit Returns"
+      reward: Returns
+      info_box: "Info Box"
+      minimum_value: "Value"
+      deliver_at: "Estimated Delivery"
+      description: "Description:"
+      limit_reward: "Returns is Limited"
+      available: "Available"
+      submit: "Save"
+      index:
+        select_reward: "Select Returns"
+        display_remaining: "%{remaining} of %{maximum} remaining"
+        dont_want: "No reward"
+        limited: Limited
+        sold_out: Sold Out
+        contributions_to_confirm:
+          one: 1 contribution in terms of confirmation
+          other: "%{count} supports in terms of confirmation."
+        edit_reward: Edit Returns
+        new_reward: Create Returns
+        reward_deliver_time: "<b>Estimated Delivery:</b> %{estimate}"
+        reward_title: For %{minimum} or more
+    dashboard_user_settings:
+      title: "Registration and Bank Information"
+      subtitle_html: "With the form below complete, your project will be ready to air. After completing the filling, then click Save. Review. If everything is ok, just press the Post button and start your campaign!"
+      user_data_title: "Address"
+      user_data_subtitle_html: "We need the data below for the issuance of Tax Notes for successful projects. <b> ATTENTION: CPF / CNPJ listed in the registration data and bank details must be the same </ b>."
+      account_title: "Bank Account"
+      account_subtitle_html: "We need the data below for the issuance of Tax Notes for successful projects. <b> ATTENTION: CPF / CNPJ listed in the registration data and bank details must be the same </ b>"
+      account_edit_disabled_html: "The following data were entered by you at the time of publication of your project. To avoid errors in the transfer of resources, the issue of this data was blocked so your project went live. If you want to change them, is only% {link} informing the changes you want to do."
+      submit: "Save"
+    dashboard_reward:
+      add_reward: "Add Returns"
+      submit: "Save"
+      title: "Create and edit your rewards here"
+      add_reward: "Add a reward"
+      subtitle: "This is your show of gratitude to the supporters. Remember to include the cost of rewards in your budget."
+      reward: "Returns"
+    dashboard_home_templates:
+      status: "Status:"
+      project_numbers:
+        financed: funded
+        backed: funded
+        contributions: conttributions
+        left: left
+      waiting_funds:
+        title: "%{name}, your campaign is in progress."
+        subtitle_html: "Seu projeto foi finalizado em %{expires} e está aguardando confirmação de boletos e pagamentos. Devido à data de vencimento de boletos, projetos que tiveram apoios de última hora ficam por até 4 dias úteis nesse status, contados a partir da data de finalização do projeto. %{link}."
+        header: "A partir daqui o seu projeto pode bater a meta ou não. Veja o que acontece em cada um dos casos:"
+        success: "Bati a meta:"
+        failed: "Não bati a meta:"
+        good_luck: "Boa sorte!"
+      successful:
+        title: "%{name}, your campaign is successfully funded!"
+        subtitle_html: "Seu projeto foi bem sucedido e agora é a hora de iniciar o trabalho de relacionamento com seus apoiadores! Atenção especial à entrega de recompensas. Prometeu? Entregue! Não deixe de olhar a seção de pós-projeto do %{link1} e de informar-se sobre %{link2}. "
+        header1: "E não se esqueça: transparência é tudo."
+        transparent_html: "Manter um apoiador informado é manter um apoiador feliz. Mesmo que você vá informá-lo de uma falha ou contratempo. Apoiadores felizes são %{link} . Portanto, use e abuse (sempre com moderação) da aba novidades. O que você escrever por lá chega direto na caixa de emails dos seus apoiadores. Já vai começar a entrega de recompensas? Na aba \"relatórios\" você baixa informações para que você possa fazer a gestão de entrega de recompensas do seu projeto."
+        header2: "Não deixe de ler:"
+      rejected:
+        title: "%{name}, your campaign is rejected"
+        subtitle_html: ""
+      online:
+        title: "%{name}, your campaign is live!"
+        subtitle_html: ""
+        explanation_html: ""
+      failed:
+        title: "%{name}, your campaign is failed!"
+        subtitle_html: ""
+        questions: ""
+      draft:
+        title: "%{name}, create your campaign!"
+        subtitle: "The more careful and well formatted a campaign, the greater the chances of it being successful. "
+        study_title: "Need to learn how to create your campaign? Check out the links in the box to the side."
+      approved:
+        title: "%{name}, your campaign has been approved!"
+        subtitle_html: ""
+      in_analysis:
+        title: "%{name}, your campaign has been submitted for approval"
+        subtitle_html: ""
+    edit:
+      leave_link_html: "&nbsp; Sair do painel de controle"
+      start_tab: Start
+      basics_tab: Basic
+      project_tab: About Your Startup
+      posts_tab: Posts
+      rewards_tab: Returns
+      about_you_tab: About You
+      reports_tab: Reports
+      account_tab: Account
+      preview_tab: Preview
+      send: Submit
+      publish: Publish  
+    dashboard_basics:
+      project_start: 'Complete the information below'
+      project_start_subtitle: 'The information below cannot be modified when the project goes live.'
+      online_date: 'Fill out carefully'
+      user_id: 'User ID'
+      name: 'Campaign Name'
+      name_label: 'Do not exceed 50 characters'
+      url: 'Company URL'
+      url_label: 'This is the URL to your website'
+      category: 'Category'
+      category_label: 'Explore and get inspired by other campaigns in the same category'
+      online_days: 'Length of Campaign'
+      online_days_label: 'You can choose between 1 and 60 days.'
+      value: 'Amount to be raised'
+      value_secondary: 'Your goal'
+      form:
+        submit: 'Save'
+    dashboard_user_about:
+      submit: "Submit"
+      title: "Tell the investors more about yourself."
+      subtitle: "Investors want to learn more about the person behind the company."
+      twitter_label: Twitter Profile"
+      twitter_hint: "This is the link to your twitter profile"
+      other_link_label: "Online presence"
+      other_link_hint: "Links to your company website"
+      about_label: "About Me"
+      about_hint: "Use this space to talk about you and your company."
+      facebook_link_label: "Facebook Profile"
+      facebook_link_hint: "This is the link to your Facebook page"
+      uploaded_image_label: "Profile image"
+      uploaded_image_hint: "This is the thumbnail of your profile"
+      name_hint: "Your name visible to all investors"
+    dashboard_project:
+      budgets_hint_html: "Enter a list of the items in your budget so that your investors know how the money is spent"
+      budget_hint_html: "How your money will be used."
+      budget_label: "Budget"
+      budgets_label: "Budget Detail"
+      start: "Tell your story!"
+      start_subtitle: "A good story attracts investors."
+      video_url: "Video URL"
+      video_url_hint: "Link to your video on Youtube or Vimeo"
+      about: "Your Company Description"
+      links_title: "Useful links"
+      about_html: About Your Company
+      about_hint_html: 'Tell your investors what your mission is'
+      card: 'Campaign Card'
+      card_subtitle: 'This card appears on the homepage'
+      image: 'Campaign Images'
+      image_hint: 'Thumbnail of your campaign (PNG, JPG tamanho 600 x 340)'
+      headline: 'Campaign Excerpt'
+      headline_hint: 'Not more than 100 characters.'
+      submit: 'Save'
     index:
       sidebar:
         placeholders:
@@ -431,6 +580,9 @@ en:
       back_a_project: "Discover Startups"
       banner_title: "Invest in a Startup"
       banner_subtitle: "Music, comics, cinema, social impact, technology and more. Meet, get inspired and support startups."
+      recents: "Recent"
+      expiring: "Ending Soon"
+      recommended: "Popular"
     index_header:
       subtitle: Invest in startups in Kenya and be part something bigger.
       title: Invest in startups that you believe in 
@@ -458,7 +610,16 @@ en:
         updates: Updates
         edit: Edit
         reports: Reports
-        add_reward: 'Add Rewards'
+        add_reward: 'Add Returns'
+        panel_html: "&nbsp;&nbsp;Control Panel"
+        about: About
+        add_reward: Add Returns
+        comments: Comments
+        contributions: Contributions
+        metrics: Metrics
+        edit: Edit
+        reports: Reports
+        posts: Posts
       share: Share
       contribute_project:
         submit: "Back this project"
@@ -504,7 +665,7 @@ en:
         error: "Ooops. There was an error while registering your contribution. Please try again."
         international:
           description: "You can use PayPal to make international payments"
-          important_html: "<p>The use of PayPal is destinated mostly for international payments. That's because you'll have only 60 days to receive an eventual refund without paying any fee.</p><p>In case you can make the regular payment through MoIP, we recommend you to do it.</p><p>But if that's not possible, don't worry: you'll always be able to receive your money back. Only, in case your refund is made more than 60 days after your payment, you'll have to pay PayPal's fee, which is 5,4% + R$0,60 per transaction.</p>"
+          important_html: "<p>The use of PayPal is destinated mostly for international payments. That's because you'll have only 60 days to receive an eventual refund without paying any fee.</p><p>In case you can make the regular payment through MoIP, we recommend you to do it.</p><p>But if that's not possible, don't worry: you'll always be able to receive your money back. Only, in case your refund is made more than 60 days after your payment, you'll have to pay PayPal's fee, which is 5,4% + $0,60 per transaction.</p>"
           submit: "Proceed to PayPal's checkout"
           title: "Want to make an international payment?"
         review_with_reward_html: "You will contribute with <strong>%{value}</strong> and receive the following reward:"
@@ -532,7 +693,7 @@ en:
         content_html: "Want to have your project selected? Don't forget to read %{link}."
         help_link: "our guide"
       rewards_description: "We believe that the best way to inspire people to contriubte a project is offering excellent – and creative! – rewards. Everybody loves limited editions, unique things and joyful experiences (parties, candies, balloon travelling!). Spend some time devising creative rewards and people will be interested."
-      rewards_title: Rewards
+      rewards_title: Returns
       submit: "Save draft"
     index_header:
       subtitle: "Fund projects collaboratively and become part of something bigger. Promote a collective catharsis! You're the missing part in this story."
@@ -569,7 +730,7 @@ en:
       project: Project
       refunded: Refunded?
       requested_refund: "Requested refund?"
-      reward: Reward
+      reward: Returns
       submit: Search
       title: "Contributions management"
       total_contributed: contributed
@@ -581,6 +742,27 @@ en:
     project:
       contributed: contributed
       reached: reached
+      progress_html: "<span>%{percent}%</span> invested"
+      time_remaining_small_html:
+        one: "<div class='fontsize-smallest lineheight-tightest'>%{count} %{unit}</div> <div class='fontsize-smallest lineheight-tightest'>remaining</div>"
+        other: "<div class='fontsize-smallest lineheight-tightest'>%{count} %{unit}</div> <div class='fontsize-smallest lineheight-tightest'>remaining</div>"
+      time_remaining_html:
+        one: "<span>%{count} %{unit}</span> remaining"
+        other: "<span>%{count} %{unit}</span> remaining"
+      pledged_html: "<span>%{value}</span> invested"
+      display_status:
+        online: 'Online'
+        expired: "Ended"
+        rejected: "Rejected"
+        failed: "Failed"
+        successful: Invested
+        approved: Approved
+        reached_goal: Invested
+        waiting_confirmation: In Progress
+        waiting_funds: In Progress
+        not_reached_goal: In Progress
+        draft: "Draft"
+        in_analysis: In Progress
     project_contributions:
       empty: "Nobody contributed this project so far. How about being the first one?"
       confirmed: "Confirmed"
@@ -908,7 +1090,7 @@ en:
       many: "Contributed this and other %{total} projects"
       one: "Contributed only this project until now"
       two: "Contributed this and 1 other project"
-    no_name: Unnamed
+    no_name: Anonymous
     google_account: "Google Account"
   users:
     project:

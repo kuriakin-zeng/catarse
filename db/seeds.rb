@@ -42,9 +42,9 @@ puts 'Seeding the database...'
 
 {
   company_name: 'Acorn Crowd Ventures',
-  company_logo: 'http://localhost:3000/assets/catarse_bootstrap/acorncv.png',
-  host: 'localhost:3000',
-  base_url: "http://localhost:3000",
+  company_logo: 'http://fathomless-caverns-8430.herokuapp.com/assets/catarse_bootstrap/acorncv.png',
+  host: 'fathomless-caverns-8430.herokuapp.com',
+  base_url: "http://fathomless-caverns-8430.herokuapp.com",
 
   email_contact: '#',
   email_payments: '#',
@@ -58,7 +58,7 @@ puts 'Seeding the database...'
   mailchimp_url: "#",
   catarse_fee: '0.13',
   support_forum: '#',
-  base_domain: 'http://localhost:3000',
+  base_domain: 'http://fathomless-caverns-8430.herokuapp.com',
   uservoice_secret_gadget: 'change_this',
   uservoice_key: 'uservoice_key',
   faq_url: '#',
